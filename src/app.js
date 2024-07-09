@@ -38,7 +38,7 @@ function generadorExcusas() {
   const posicionWhen = posicionAleatoria(when);
 
   return (
-    who[posicionWho] + " " + action[posicionAction] + what[posicionWhat] + when[posicionWhen]
+    who[posicionWho] + " " + action[posicionAction] + " " + what[posicionWhat] + " " + when[posicionWhen]
   );
 
 }
@@ -49,3 +49,9 @@ window.onload = function () {
   document. getElementById("excuse").innerHTML=generadorExcusas()
   console.log("Lo logre!");
 };
+
+
+
+document.getElementById("boton").addEventListener("click", () => {
+  document.getElementById("excuse").innerHTML = generadorExcusas();
+});
