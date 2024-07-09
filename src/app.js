@@ -51,7 +51,13 @@ window.onload = function () {
 };
 
 
-
+//funcion flecha
 document.getElementById("boton").addEventListener("click", () => {
   document.getElementById("excuse").innerHTML = generadorExcusas();
 });
+
+
+//funcion clásica
+/*document.getElementById("boton").addEventListener("click", function() {
+      document.getElementById("excuse").innerHTML = generadorExcusas();
+    });*/
